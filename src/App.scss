@@ -1,0 +1,25 @@
+body {
+  header {
+    padding: 30px;
+
+    .logo {
+      width: 40px;
+      height: 40px;
+    }
+
+    nav {
+      float: right;
+    }
+
+    nav > a {
+      text-decoration: none;
+      color: blue;
+      margin: 20px;
+    }
+
+    nav > a.active {
+      text-decoration: underline;
+      color: red;
+    }
+  }
+}
