@@ -3,7 +3,7 @@ import * as url from '../assets/planet.png';
 
 const Header = () => (
   <>
-    <img src={url} alt="space-logo" />
+    <img src={url.default} alt="space-logo" />
   </>
 );
 
