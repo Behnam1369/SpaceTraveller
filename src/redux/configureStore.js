@@ -1,4 +1,4 @@
-import { combineReducers, createStore } from 'react-redux';
+import { combineReducers, createStore } from 'redux';
 import { missionReducer } from './missions';
 import { rocketsReducer } from './rockets';
 
