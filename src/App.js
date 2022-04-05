@@ -4,7 +4,7 @@ import Header from './components/Header';
 import MyProfile from './components/MyProfile';
 import './App.scss';
 import MissionList from './components/MissionList';
-import { RocketList } from './components/RocketList'
+import RocketList from './components/RocketList';
 
 function App() {
   return (
