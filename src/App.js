@@ -4,6 +4,7 @@ import Header from './components/Header';
 import MyProfile from './components/MyProfile';
 import './App.scss';
 import MissionList from './components/MissionList';
+import RocketList from './components/RocketList';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/MyProfile" element={<MyProfile />} />
           <Route path="/Missions" element={<MissionList />} />
+          <Route path="/Rockets" element={<RocketList />} />
         </Routes>
       </BrowserRouter>
     </div>
