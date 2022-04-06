@@ -10,7 +10,9 @@ function MissionList() {
 
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getMissions());
+    if (missions === null) {
+      dispatch(getMissions());
+    }
   }, []);
 
   let missionList = '';
