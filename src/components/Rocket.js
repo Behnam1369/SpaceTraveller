@@ -10,9 +10,9 @@ function Rocket(props) {
   const dispatch = useDispatch();
   const reservButton = (element) => {
     if (element.reserved === false) {
-      return <button className="reserv-button" type="button" onClick={() => { dispatch(addReserv(element.id)); }}>Reserve now!</button>;
+      return <button className="reserv-btn add-btn" type="button" onClick={() => { dispatch(addReserv(element.id)); }}>Reserve now!</button>;
     }
-    return <button className="reserv-button" type="button" onClick={() => { dispatch(removeReserv(element.id)); }}>Remove reservation</button>;
+    return <button className="reserv-btn rm-btn" type="button" onClick={() => { dispatch(removeReserv(element.id)); }}>Remove reservation</button>;
   };
   return (
     <div className="rocket">
