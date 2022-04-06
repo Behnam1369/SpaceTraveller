@@ -31,7 +31,7 @@ body {
     thead {
       th {
         border: solid 1px silver;
-        font-family: Helvetica;
+        font-family: Helvetica, sans-serif;
         padding: 5px;
       }
     }
@@ -42,7 +42,7 @@ body {
 
     td {
       border: solid 1px silver;
-      font-family: Helvetica;
+      font-family: Helvetica, sans-serif;
       padding: 5px;
 
       span {
@@ -50,15 +50,14 @@ body {
         color: white;
         white-space: nowrap;
         padding: 5px;
-        font-family: Helvetica;
+        font-family: Helvetica, sans-serif;
         font-size: 14px;
         border-radius: 3px;
       }
+
       span.joined {
         background-color: darkcyan;
       }
-
-      
     }
 
     td:nth-child(1) {
@@ -67,12 +66,12 @@ body {
     }
 
     td:nth-child(2) {
-      font-family: 'Arial Narrow';
-      text-align: left; 
+      font-family: Arial, sans-serif;
+      text-align: left;
 
       button {
         background-color: transparent;
-        border:none;
+        border: none;
         color: blue;
         cursor: pointer;
       }
@@ -84,7 +83,7 @@ body {
       border: solid 1px gray;
       white-space: nowrap;
       padding: 5px;
-      font-family: Helvetica;
+      font-family: Helvetica, sans-serif;
       font-size: 14px;
       cursor: pointer;
       border-radius: 4px;
@@ -95,6 +94,4 @@ body {
       border-color: red;
     }
   }
-
-  
 }
