@@ -1,5 +1,7 @@
 const GETMISSIONS = 'space-traveller/missions/GET MISSIONS';
 const SETLOADING = 'book-store/books/SET LOADING';
+const JOINMISSION = 'book-store/books/JOIN MISSION';
+const LEAVEMISSION = 'book-store/books/LEAVE MISSION';
 
 const defaultState = {
   loading: true,
@@ -12,6 +14,26 @@ export default function missionReducer(state = defaultState, action) {
       return { ...state, missions: action.missions };
     case SETLOADING:
       return { ...state, loading: action.loading };
+    case JOINMISSION: {
+      const newState = {
+        ...state,
+        missions: state.missions.map((el) => (
+          el.mission_id === action.idMission
+            ? { ...el, joined: true }
+            : { ...el })),
+      };
+      return newState;
+    }
+    case LEAVEMISSION: {
+      const newState = {
+        ...state,
+        missions: state.missions.map((el) => (
+          el.mission_id === action.idMission
+            ? { ...el, joined: false }
+            : { ...el })),
+      };
+      return newState;
+    }
     default:
       return state;
   }
@@ -50,4 +72,12 @@ export function getMissions() {
       type: GETMISSIONS, missions, failureAPI, failureMessage,
     });
   };
+}
+
+export function joinMission(idMission) {
+  return { type: JOINMISSION, idMission };
+}
+
+export function leaveMission(idMission) {
+  return { type: LEAVEMISSION, idMission };
 }
