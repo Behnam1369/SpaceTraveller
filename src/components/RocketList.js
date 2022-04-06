@@ -1,27 +1,30 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import { React, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import Rocket from './Rocket';
+import { getRocketData } from '../redux/rockets';
 
-const RocketList = (props) => {
-  const { list } = props;
+const RocketList = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getRocketData());
+  }, []);
+
+  const list = useSelector((state) => state.rockets);
   return (
     <div className="rocket-list">
-      <h1>Missions </h1>
+      <h1>Rockets </h1>
       {list.map((el) => (
         <Rocket
           key={el.id}
           id={el.id}
-          rocketName={el.rocket_name}
+          name={el.name}
           description={el.description}
-          image={el.flickr_images[0]}
+          image={el.image}
         />
       ))}
     </div>
   );
-};
-
-RocketList.propTypes = {
-  list: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 };
 
 export default RocketList;
