@@ -9,7 +9,6 @@ const RocketList = () => {
   useEffect(() => {
     if (list.length === 0) {
       dispatch(getRocketData());
-      console.log('we come again');
     }
   }, []);
   return (
