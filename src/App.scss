@@ -22,4 +22,79 @@ body {
       color: red;
     }
   }
+
+  .missionList {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+
+    thead {
+      th {
+        border: solid 1px silver;
+        font-family: Helvetica;
+        padding: 5px;
+      }
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: whitesmoke;
+    }
+
+    td {
+      border: solid 1px silver;
+      font-family: Helvetica;
+      padding: 5px;
+
+      span {
+        background-color: gray;
+        color: white;
+        white-space: nowrap;
+        padding: 5px;
+        font-family: Helvetica;
+        font-size: 14px;
+        border-radius: 3px;
+      }
+      span.joined {
+        background-color: darkcyan;
+      }
+
+      
+    }
+
+    td:nth-child(1) {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    td:nth-child(2) {
+      font-family: 'Arial Narrow';
+      text-align: left; 
+
+      button {
+        background-color: transparent;
+        border:none;
+        color: blue;
+        cursor: pointer;
+      }
+    }
+
+    td:nth-child(4) button {
+      background-color: white;
+      color: gray;
+      border: solid 1px gray;
+      white-space: nowrap;
+      padding: 5px;
+      font-family: Helvetica;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    td:nth-child(4) button.joined {
+      color: red;
+      border-color: red;
+    }
+  }
+
+  
 }

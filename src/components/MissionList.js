@@ -17,24 +17,36 @@ function MissionList() {
 
   let missionList = '';
   if (loading) {
-    missionList = <h3>Loading...</h3>;
+    missionList = <tr><td colSpan={4}>Loading...</td></tr>;
   } else if (failureAPI) {
-    missionList = <h3>OOPS! SOMETHING WENT WRONG. PLEASE TRY AGAIN LATER.</h3>;
+    missionList = <tr><td colSpan={4}>OOPS! SOMETHING WENT WRONG. PLEASE TRY AGAIN LATER.</td></tr>;
   } else if (missions.length === 0) {
-    missionList = <h3>There is no book in the list yet.</h3>;
+    missionList = <tr><td colSpan={4}>There is no book in the list yet.</td></tr>;
   } else {
     missionList = missions.map((el) => (
       <Mission
         key={el.mission_id}
+        id={el.mission_id}
         description={el.description}
         name={el.mission_name}
+        joined={el.joined}
       />
     ));
   }
   return (
-    <div className="missionList">
-      {missionList}
-    </div>
+    <table className="missionList">
+      <thead>
+        <tr>
+          <th>Mission</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th> </th>
+        </tr>
+      </thead>
+      <tbody>
+        {missionList}
+      </tbody>
+    </table>
   );
 }
 
