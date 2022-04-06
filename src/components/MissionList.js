@@ -7,10 +7,11 @@ function MissionList() {
   const {
     loading, missions, failureAPI,
   } = useSelector((state) => state.missions);
-
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getMissions());
+    if (missions === null) {
+      dispatch(getMissions());
+    }
   }, []);
 
   let missionList = '';
