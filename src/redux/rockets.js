@@ -1,6 +1,7 @@
 /* eslint-disable prefer-destructuring */
 const GETAPI = 'GET_API_DATA';
 const ADDRESERVATION = 'ADD_ROCKET_RESERV';
+const REMOVERESERVATION = 'REMOVE_ROCKET_RESERV';
 
 export const apiData = (payload) => ({
   type: GETAPI,
@@ -9,6 +10,11 @@ export const apiData = (payload) => ({
 
 export const addReserv = (id) => ({
   type: ADDRESERVATION,
+  data: id
+})
+
+export const removeReserv = (id) => ({
+  type: REMOVERESERVATION,
   data: id
 })
 
@@ -22,6 +28,15 @@ export const rocketsReducer = (state = [], action) => {
           return r;
         }
         return { ...r, reserved: true };
+      });
+      return newState;
+    }
+    case REMOVERESERVATION: {
+      const newState = state.map((r) => {
+        if (r.id !== action.data) {
+          return r;
+        }
+        return { ...r, reserved: false };
       });
       return newState;
     }
