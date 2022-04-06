@@ -10,13 +10,13 @@ export const apiData = (payload) => ({
 
 export const addReserv = (id) => ({
   type: ADDRESERVATION,
-  data: id
-})
+  data: id,
+});
 
 export const removeReserv = (id) => ({
   type: REMOVERESERVATION,
-  data: id
-})
+  data: id,
+});
 
 export const rocketsReducer = (state = [], action) => {
   switch (action.type) {
