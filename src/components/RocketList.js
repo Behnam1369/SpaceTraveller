@@ -4,13 +4,13 @@ import Rocket from './Rocket';
 import { getRocketData } from '../redux/rockets';
 
 const RocketList = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getRocketData());
-  }, []);
-
   const list = useSelector((state) => state.rockets);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    if (list.length === 0) {
+      dispatch(getRocketData());
+    }
+  }, []);
   return (
     <div className="rocket-list">
       <h1>Rockets </h1>
@@ -21,6 +21,7 @@ const RocketList = () => {
           name={el.name}
           description={el.description}
           image={el.image}
+          el={el}
         />
       ))}
     </div>
