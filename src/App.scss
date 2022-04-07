@@ -100,6 +100,7 @@ body {
     width: 80%;
     margin: auto;
     padding: 20px;
+
     .reserve-span {
       font-size: 12px;
       background-color: rgb(64, 224, 176);
@@ -113,15 +114,18 @@ body {
       height: 190px;
       padding: 20px;
     }
+
     .reserv-btn {
       border: none;
       background: none;
       padding: 7px;
       border-radius: 5px;
     }
+
     .add-btn {
       background-color: rgb(109, 109, 255);
     }
+
     .rm-btn {
       border: black 1px solid;
     }
@@ -129,9 +133,11 @@ body {
 
   .profile {
     margin: 7%;
+
     .divs-const {
       display: flex;
       justify-content: space-between;
+
       .profile-categories {
         width: 40%;
       }
