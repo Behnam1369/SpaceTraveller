@@ -34,14 +34,17 @@ describe('Testing Mission in Application', () => {
     ];
 
     configureStore.dispatch({ type: 'space-traveller/missions/GET MISSIONS', missions });
-    configureStore.dispatch({ type: 'book-store/books/SET LOADING', loading: false });
+    configureStore.dispatch({ type: 'space-traveller/missions/SET LOADING', loading: false });
+
     render(
       <Provider store={configureStore}>
         <App />
       </Provider>,
     );
+
     fireEvent.click(screen.getByText('Missions'));
     waitFor(() => screen.getByText('Join Mission')[0]);
+
     fireEvent.click(screen.getByText('Join Mission'));
     expect(screen.getByTestId('badge')).toHaveTextContent('Active Member');
   });
@@ -58,7 +61,7 @@ describe('Testing Mission in Application', () => {
     ];
 
     configureStore.dispatch({ type: 'space-traveller/missions/GET MISSIONS', missions });
-    configureStore.dispatch({ type: 'book-store/books/SET LOADING', loading: false });
+    configureStore.dispatch({ type: 'space-traveller/missions/SET LOADING', loading: false });
     render(
       <Provider store={configureStore}>
         <App />

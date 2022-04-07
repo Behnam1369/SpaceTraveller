@@ -1,37 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing Mission Test Mission component snapshot 1`] = `
-<table
-  className="missionList"
->
-  <thead>
-    <tr>
-      <th>
-        Mission
-      </th>
-      <th>
-        Description
-      </th>
-      <th>
-        Status
-      </th>
-      <th>
-         
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td
-        colSpan={4}
-      >
-        Loading...
-      </td>
-    </tr>
-  </tbody>
-</table>
-`;
-
 exports[`Unit Testing Mission Test Mission component snapshot 1`] = `
 <table
   className="missionList"
