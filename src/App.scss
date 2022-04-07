@@ -95,8 +95,53 @@ body {
     }
   }
 
+  .rocket-card {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+
+    .reserve-span {
+      font-size: 12px;
+      background-color: rgb(64, 224, 176);
+      margin: 0 5px 0 0;
+      padding: 2px;
+      border-radius: 5px;
+    }
+
+    .rocket-img-src {
+      width: 250px;
+      height: 190px;
+      padding: 20px;
+    }
+
+    .reserv-btn {
+      border: none;
+      background: none;
+      padding: 7px;
+      border-radius: 5px;
+    }
+
+    .add-btn {
+      background-color: rgb(109, 109, 255);
+    }
+
+    .rm-btn {
+      border: black 1px solid;
+    }
+  }
+
   .profile {
     margin: 7%;
+
+    .divs-const {
+      display: flex;
+      justify-content: space-between;
+
+      .profile-categories {
+        width: 40%;
+      }
+    }
 
     h1 {
       font-family: Helvetica, sans-serif;

@@ -5,7 +5,7 @@ import { addReserv, removeReserv } from '../redux/rockets';
 
 function Rocket(props) {
   const {
-    id, name, description, image, el,
+    name, description, image, el,
   } = props;
   const dispatch = useDispatch();
   const reservButton = (element) => {
@@ -14,24 +14,25 @@ function Rocket(props) {
     }
     return <button className="reserv-btn rm-btn" type="button" onClick={() => { dispatch(removeReserv(element.id)); }}>Remove reservation</button>;
   };
+
   return (
-    <div className="rocket">
+    <div className="rocket-card">
       <div className="rocket-img">
-        <img src={image} alt="rocket-img" />
+        <img src={image} className="rocket-img-src" alt="rocket-img" />
       </div>
-      <h2>{name}</h2>
-      <p>
-        Rocket id:
-        {id}
-      </p>
-      <p>{description}</p>
-      {reservButton(el)}
+      <div className="rocket-content">
+        <h2>{name}</h2>
+        <p>
+          {el.reserved === true ? <span className="reserve-span">reserved</span> : null}
+          {description}
+        </p>
+        {reservButton(el)}
+      </div>
     </div>
   );
 }
 
 Rocket.propTypes = {
-  id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,

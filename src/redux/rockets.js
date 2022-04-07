@@ -1,7 +1,7 @@
 /* eslint-disable prefer-destructuring */
-const GETAPI = 'GET_API_DATA';
-const ADDRESERVATION = 'ADD_ROCKET_RESERV';
-const REMOVERESERVATION = 'REMOVE_ROCKET_RESERV';
+const GETAPI = 'space-traveller/rockets/GET_API_DATA';
+const ADDRESERVATION = 'space-traveller/rockets/ADD_ROCKET_RESERV';
+const REMOVERESERVATION = 'space-traveller/rockets/REMOVE_ROCKET_RESERV';
 
 export const apiData = (payload) => ({
   type: GETAPI,
