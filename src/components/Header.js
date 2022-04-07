@@ -4,12 +4,11 @@ import * as url from '../assets/planet.png';
 
 const Header = () => (
   <header>
-    <img className="logo" src={url.default} alt="space-logo" />
+    <NavLink to="/"><img className="logo" src={url.default} alt="space-logo" /></NavLink>
     <nav>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/MyProfile">My Profile</NavLink>
+      <NavLink to="/">Rockets</NavLink>
       <NavLink to="/Missions">Missions</NavLink>
-      <NavLink to="/Rockets">Rockets</NavLink>
+      <NavLink to="/MyProfile">My Profile</NavLink>
     </nav>
   </header>
 );
