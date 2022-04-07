@@ -13,7 +13,6 @@ const RocketList = () => {
   }, []);
   return (
     <div className="rocket-list">
-      <h1>Rockets </h1>
       {list.map((el) => (
         <Rocket
           key={el.id}
