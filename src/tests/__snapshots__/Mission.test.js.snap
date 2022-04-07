@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Mission Testing Mission component snapshot 1`] = `
+<tr
+  className="mission"
+>
+  <td>
+    Impossible Mission
+  </td>
+  <td>
+     
+    A Sample Mission Description
+     
+  </td>
+  <td>
+    <span
+      className=""
+      data-testid="badge"
+    >
+       
+      NOT A MEMBER
+       
+    </span>
+  </td>
+  <td>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      Join Mission
+    </button>
+  </td>
+</tr>
+`;

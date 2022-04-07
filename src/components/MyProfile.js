@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 
 function MyProfile() {
   const { missions } = useSelector((state) => state.missions);
-  const joinedMissions = missions.filter((el) => el.joined);
+  const joinedMissions = (missions == null ? [] : missions.filter((el) => el.joined));
   return (
     <div className="profile">
       <h1>Profile</h1>
