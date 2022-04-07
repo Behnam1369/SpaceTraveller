@@ -97,6 +97,13 @@ body {
 
   .profile {
     margin: 7%;
+    .divs-const {
+      display: flex;
+      justify-content: space-between;
+      .profile-categories {
+        width: 40%;
+      }
+    }
 
     h1 {
       font-family: Helvetica, sans-serif;

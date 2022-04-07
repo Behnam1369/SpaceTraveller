@@ -1,7 +1,7 @@
 const GETMISSIONS = 'space-traveller/missions/GET MISSIONS';
-const SETLOADING = 'book-store/books/SET LOADING';
-const JOINMISSION = 'book-store/books/JOIN MISSION';
-const LEAVEMISSION = 'book-store/books/LEAVE MISSION';
+const SETLOADING = 'space-traveller/missions/SET LOADING';
+const JOINMISSION = 'space-traveller/missions/JOIN MISSION';
+const LEAVEMISSION = 'space-traveller/missions/LEAVE MISSION';
 
 const defaultState = {
   loading: true,
