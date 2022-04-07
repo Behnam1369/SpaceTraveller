@@ -3,14 +3,11 @@ import { useSelector } from 'react-redux';
 
 function MyProfile() {
   const { missions } = useSelector((state) => state.missions);
-  console.log(missions);
   const joinedMissions = missions.filter((el) => el.joined);
-  console.log(joinedMissions);
   return (
-    <>
-      <h1>Hello from My Profile</h1>
-
-      <div className="JoinedMissions">
+    <div className="profile">
+      <h1>Profile</h1>
+      <div className="joinedMissions">
         {joinedMissions.length > 0
           ? (
             <>
@@ -28,7 +25,7 @@ function MyProfile() {
           )
           : <h2>You have not joined any missions yet.</h2>}
       </div>
-    </>
+    </div>
   );
 }
 

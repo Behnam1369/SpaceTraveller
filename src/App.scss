@@ -94,4 +94,27 @@ body {
       border-color: red;
     }
   }
+
+  .profile {
+    margin: 7%;
+    h1 {
+      font-family: Helvetica, sans-serif;
+    }
+
+    h2{
+      font-family: Helvetica, sans-serif;
+    }
+
+    ul {
+      width: 50%;
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 20px;
+        border: solid 1px lightgray;
+      }
+    }
+  }
 }
