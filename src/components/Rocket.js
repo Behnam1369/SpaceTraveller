@@ -10,7 +10,7 @@ function Rocket(props) {
   const dispatch = useDispatch();
   const reservButton = (element) => {
     if (element.reserved === false) {
-      return <button className="reserv-btn add-btn" type="button" onClick={() => { dispatch(addReserv(element.id)); }}>Reserve now!</button>;
+      return <button className="reserv-btn add-btn" type="button" data-testid="quit" onClick={() => { dispatch(addReserv(element.id)); }}>Reserve now!</button>;
     }
     return <button className="reserv-btn rm-btn" type="button" onClick={() => { dispatch(removeReserv(element.id)); }}>Remove reservation</button>;
   };
@@ -23,7 +23,7 @@ function Rocket(props) {
       <div className="rocket-content">
         <h2>{name}</h2>
         <p>
-          {el.reserved === true ? <span className="reserve-span">reserved</span> : null}
+          {el.reserved === true ? <span className="reserve-span" data-testid="teal">reserved</span> : null}
           {description}
         </p>
         {reservButton(el)}

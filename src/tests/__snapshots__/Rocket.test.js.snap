@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Mission Testing Mission component snapshot 1`] = `
+<div
+  className="rocket-card"
+>
+  <div
+    className="rocket-img"
+  >
+    <img
+      alt="rocket-img"
+      className="rocket-img-src"
+      src="https://imgur.com/DaCfMsj.jpg"
+    />
+  </div>
+  <div
+    className="rocket-content"
+  >
+    <h2>
+      key1
+    </h2>
+    <p>
+      <span
+        className="reserve-span"
+        data-testid="teal"
+      >
+        reserved
+      </span>
+      A Sample rocket
+    </p>
+    <button
+      className="reserv-btn rm-btn"
+      onClick={[Function]}
+      type="button"
+    >
+      Remove reservation
+    </button>
+  </div>
+</div>
+`;
