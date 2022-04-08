@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing MyProfile Testing MyProfile component snapshot 1`] = `
+<div
+  className="profile"
+>
+  <h1>
+    Profile
+  </h1>
+  <div
+    className="divs-const"
+  >
+    <div
+      className="profile-categories"
+    >
+      <h2>
+        You have not joined any missions yet.
+      </h2>
+    </div>
+    <div
+      className="profile-categories"
+    >
+      <h2>
+        You have not reserved any rocket yet.
+      </h2>
+    </div>
+  </div>
+</div>
+`;

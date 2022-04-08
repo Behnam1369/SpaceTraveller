@@ -1,0 +1,185 @@
+body {
+  header {
+    padding: 15px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      width: 60px;
+      height: 60px;
+    }
+
+    h1 {
+      display: inline;
+      font-family: Helvetica, sans-serif;
+      margin-left: 30px;
+    }
+
+    nav {
+      float: right;
+      margin-left: auto;
+    }
+
+    nav > a {
+      font-family: Helvetica, sans-serif;
+      text-decoration: none;
+      color: #5ca7ff;
+      margin: 20px;
+    }
+
+    nav > a.active {
+      text-decoration: underline;
+    }
+  }
+
+  .missionList {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+
+    thead {
+      th {
+        border: solid 1px silver;
+        font-family: Helvetica, sans-serif;
+        padding: 5px;
+      }
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: whitesmoke;
+    }
+
+    td {
+      border: solid 1px silver;
+      font-family: Helvetica, sans-serif;
+      padding: 5px;
+
+      span {
+        background-color: gray;
+        color: white;
+        white-space: nowrap;
+        padding: 5px;
+        font-family: Helvetica, sans-serif;
+        font-size: 14px;
+        border-radius: 3px;
+      }
+
+      span.joined {
+        background-color: darkcyan;
+      }
+    }
+
+    td:nth-child(1) {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    td:nth-child(2) {
+      font-family: Arial, sans-serif;
+      text-align: left;
+
+      button {
+        background-color: transparent;
+        border: none;
+        color: blue;
+        cursor: pointer;
+      }
+    }
+
+    td:nth-child(4) button {
+      background-color: white;
+      color: gray;
+      border: solid 1px gray;
+      white-space: nowrap;
+      padding: 5px;
+      font-family: Helvetica, sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    td:nth-child(4) button.joined {
+      color: red;
+      border-color: red;
+    }
+  }
+
+  .rocket-card {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+
+    .reserve-span {
+      font-size: 12px;
+      background-color: rgb(64, 224, 176);
+      margin: 0 5px 0 0;
+      padding: 2px;
+      border-radius: 5px;
+    }
+
+    .rocket-img-src {
+      width: 250px;
+      height: 190px;
+      padding: 20px;
+    }
+
+    h2,
+    p {
+      font-family: Helvetica, sans-serif;
+    }
+
+    .reserv-btn {
+      border: none;
+      background: none;
+      padding: 7px;
+      border-radius: 5px;
+    }
+
+    .add-btn {
+      background-color: rgb(109, 109, 255);
+      color: white;
+      cursor: pointer;
+    }
+
+    .rm-btn {
+      border: black 1px solid;
+      cursor: pointer;
+    }
+  }
+
+  .profile {
+    margin: 7%;
+
+    .divs-const {
+      display: flex;
+      justify-content: space-between;
+
+      .profile-categories {
+        width: 40%;
+      }
+    }
+
+    h1 {
+      font-family: Helvetica, sans-serif;
+    }
+
+    h2 {
+      font-family: Helvetica, sans-serif;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 20px;
+        border: solid 1px lightgray;
+        width: 100%;
+      }
+    }
+  }
+}
