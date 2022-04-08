@@ -1,25 +1,35 @@
 body {
   header {
-    padding: 30px;
+    padding: 15px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     .logo {
-      width: 40px;
-      height: 40px;
+      width: 60px;
+      height: 60px;
+    }
+
+    h1 {
+      display: inline;
+      font-family: Helvetica, sans-serif;
+      margin-left: 30px;
     }
 
     nav {
       float: right;
+      margin-left: auto;
     }
 
     nav > a {
+      font-family: Helvetica, sans-serif;
       text-decoration: none;
-      color: blue;
+      color: #5ca7ff;
       margin: 20px;
     }
 
     nav > a.active {
       text-decoration: underline;
-      color: red;
     }
   }
 
@@ -115,6 +125,11 @@ body {
       padding: 20px;
     }
 
+    h2,
+    p {
+      font-family: Helvetica, sans-serif;
+    }
+
     .reserv-btn {
       border: none;
       background: none;
@@ -124,10 +139,13 @@ body {
 
     .add-btn {
       background-color: rgb(109, 109, 255);
+      color: white;
+      cursor: pointer;
     }
 
     .rm-btn {
       border: black 1px solid;
+      cursor: pointer;
     }
   }
 
@@ -152,7 +170,6 @@ body {
     }
 
     ul {
-      width: 50%;
       margin: 0;
       padding: 0;
 
@@ -161,6 +178,7 @@ body {
         margin: 0;
         padding: 20px;
         border: solid 1px lightgray;
+        width: 100%;
       }
     }
   }
