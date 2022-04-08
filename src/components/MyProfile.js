@@ -35,7 +35,7 @@ function MyProfile() {
           {reservedRockets.length > 0
             ? (
               <>
-                <h2>rocket Reservations</h2>
+                <h2>My Rocket Reservations</h2>
                 <ul>
                   {reservedRockets.map((el) => (
                     <li key={el.id}>
