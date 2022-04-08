@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Header Testing Header component snapshot 1`] = `
+<header>
+  <a
+    aria-current="page"
+    className="active"
+    href="/"
+    onClick={[Function]}
+  >
+    <img
+      alt="space-logo"
+      className="logo"
+      src="planet.png"
+    />
+  </a>
+  <nav>
+    <a
+      aria-current="page"
+      className="active"
+      href="/"
+      onClick={[Function]}
+    >
+      Rockets
+    </a>
+    <a
+      className=""
+      href="/Missions"
+      onClick={[Function]}
+    >
+      Missions
+    </a>
+    <a
+      className=""
+      href="/MyProfile"
+      onClick={[Function]}
+    >
+      My Profile
+    </a>
+  </nav>
+</header>
+`;

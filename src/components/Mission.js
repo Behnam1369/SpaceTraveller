@@ -44,7 +44,7 @@ function Mission(props) {
           )
       }
       <td>
-        <span className={joined ? 'joined' : ''}>
+        <span className={joined ? 'joined' : ''} data-testid="badge">
           {' '}
           {joined ? 'Active Member' : 'NOT A MEMBER'}
           {' '}
